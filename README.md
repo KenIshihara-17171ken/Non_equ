@@ -13,3 +13,10 @@ This repository provides Python code for analyzing **non-stationary and nonequil
 
 For further details, please refer to the following preprint:
 [https://arxiv.org/abs/2502.15440](https://arxiv.org/abs/2502.15440)
+
+## How to Reproduce the Figures
+
+To reproduce the figures, please run the following command in the terminal:
+
+```bash
+python main_kinetic/fig1_2.py
