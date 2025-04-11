@@ -72,9 +72,3 @@ coupling_alpha = 0.1 * N
 field_mu = -3
 field_sigma = 50
 field_alpha = 1
-
-State-Space Kinetic Ising Model for Nonstationary Neuronal Dynamics.  
-https://arxiv.org/abs/2502.15440
-
-
-Feel free to adjust any sections (such as the license details) to suit your project's needs.
