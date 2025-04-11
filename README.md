@@ -24,7 +24,6 @@ Inside fig1_2.py, the if __name__ == "__main__": block controls parameter loadin
 
 Figure 4
 Run:
-
 bash
 python main_kinetic/fig4.py
 Similar to fig1_2.py, this script contains its own if __name__ == "__main__": block for parameter setup, data loading/generation, and final plotting of Figure 4.
@@ -89,4 +88,3 @@ field_alpha = 1
 Reducing N, T, or R will shorten the computation time.
 
 Increasing them will significantly increase runtime, especially for full EM and sampling procedures.
-
