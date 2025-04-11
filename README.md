@@ -62,7 +62,7 @@ Within each main script (e.g., `fig4.py`), you can modify parameters such as:
 ```python
 N = 80          # Number of neurons
 T = 150         # Number of time steps
-R = 500         # Trials for fitting
+R = 500         # Number of trials
 R_sampling = 500
 
 coupling_mu = 5 / N
