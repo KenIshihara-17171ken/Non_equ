@@ -73,14 +73,6 @@ field_mu = -3
 field_sigma = 50
 field_alpha = 1
 
-
-If USE_SAVED_THETA is set to True, the script attempts to load THETA and spike data previously saved for these (or other) parameter values. If set to False, new data will be generated based on these distributions.
-
-License and Reference  
-Include your preferred license here (e.g., MIT, BSD, etc.).
-
-For referencing the model or methodology, please cite our preprint:
-
 State-Space Kinetic Ising Model for Nonstationary Neuronal Dynamics.  
 https://arxiv.org/abs/2502.15440
 
