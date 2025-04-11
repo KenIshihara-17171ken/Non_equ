@@ -39,9 +39,9 @@ def e_step(emd):
         The data structure holding all necessary model parameters and spike data.
     :returns: None
     """
-    filter_function(emd)
+    #filter_function(emd)
     # If parallel filtering is preferred, uncomment:
-    # filter_function_Parallel(emd)
+    filter_function_Parallel(emd)
 
     smoothing_function(emd)
     # If parallel smoothing is preferred, uncomment:
