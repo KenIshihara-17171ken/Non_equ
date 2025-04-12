@@ -21,6 +21,7 @@ For further details, please refer to the preprint:
 Run:
 ```bash
 python main_kinetic/fig1_2.py
+
 Inside fig1_2.py, the if __name__ == "__main__": block controls parameter loading or generation, the EM fitting process, and the plotting of Figures 1 and 2.
 
 Figure 4
@@ -68,7 +69,7 @@ True: Load previously computed sampling-based entropy-flow results. (Currently n
 
 Since all three toggles are False by default, the script will perform full data generation, EM fitting, and entropy computation. This can require up to 90 minutes on standard hardware using the default settings.
 
-Parameter Setup
+## Parameter Setup
 Within each main script (e.g., fig4.py), you can modify simulation parameters such as:
 
 python
@@ -87,5 +88,3 @@ field_sigma = 50
 field_alpha = 1
 Reducing N, T, or R will shorten the computation time.
 Increasing them will significantly increase runtime.
-
-コピーする
