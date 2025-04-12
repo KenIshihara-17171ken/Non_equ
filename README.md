@@ -22,5 +22,3 @@ Run:
 ```bash
 bash
 python main_kinetic/fig1_2.py
-
-Inside fig1_2.py, the if __name__ == "__main__": block controls parameter loading or generation, the EM fitting process, and the plotting of Figures 1 and 2.
