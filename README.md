@@ -65,9 +65,9 @@ Inside the main scripts (e.g.,fig4.py), you will often see the following boolean
 
 - **USE_SAVED_SAMPLING**
 
-  - TFalse (default): Generate new spike data and compute sampling-based entropy flow.
+  - False (default): Generate new spike data and compute sampling-based entropy flow.
 
-  - TTrue: Load previously computed sampling-based entropy-flow results. (Currently not supported.)
+  - True: Load previously computed sampling-based entropy-flow results. (Currently not supported.)
 
 Since all three toggles are False by default, the script will perform full data generation, EM fitting, and entropy computation. This can require up to 90 minutes on standard hardware using the default settings.
 
