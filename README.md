@@ -22,3 +22,15 @@ Run:
 ```bash
 bash
 python main_kinetic/fig1_2.py
+
+Inside fig1_2.py, the if __name__ == "__main__": block controls parameter loading or generation, the EM fitting process, and the plotting of Figures 1 and 2.
+
+Figure 4
+Run:
+```bash
+bash
+python main_kinetic/fig4.py
+
+Similar to fig1_2.py, this script contains its own if __name__ == "__main__": block for parameter setup, data loading/generation, and final plotting of Figure 4.
+
+Note: By default, each script generates all data and parameters from scratch, because no precomputed data is currently shared. If you would like to reproduce the results quickly, support for shared precomputed data is planned for future updates.
