@@ -26,7 +26,7 @@ Inside fig1_2.py, the if __name__ == "__main__": block controls parameter loadin
 
 
 ### Figure 4
-  ## Data Availability
+## Data Availability
 
 Due to the large size of the dataset, the complete saved data is not hosted on GitHub. Instead, it is archived on Zenodo for long-term preservation and easy citation. You can download the data using the following link:
 
@@ -35,6 +35,28 @@ Due to the large size of the dataset, the complete saved data is not hosted on G
 **Citation:**
 
 ISHIHARA, K. (2025). State-Space Kinetic Ising Model Code and Data for Neuronal Spiking Analysis. Zenodo. https://doi.org/10.5281/zenodo.15205014
+
+**How to Download and Use the Data:**
+
+1. **Download the Dataset:**
+   - Click the DOI badge above or visit [https://doi.org/10.5281/zenodo.15205014](https://doi.org/10.5281/zenodo.15205014) to navigate to the Zenodo record.
+   - On the Zenodo page, download the `saved_data.zip` file (approximately 3.1 GB).
+
+2. **Extract the Dataset:**
+   - Once downloaded, extract the `saved_data.zip` file.
+   - **Important:** Ensure that the extracted folder is placed under the `main_kinetic` directory of this repository, such that the directory structure becomes:
+     ```
+     main_kinetic/
+       └── saved_data/
+            ├── data_emd/
+            ├── data_sampling_entropy_flow/
+            └── data_theta_spike/
+     ```
+
+3. **Run the Code:**
+   - After placing the extracted `saved_data` folder in the correct location, you can run the provided Python scripts (e.g.,`python main_kinetic/fig4.py`) as described in the documentation.
+
+Following these steps will allow you to access the complete dataset hosted on Zenodo and successfully execute the analysis code in this repository.
 
 
 Run:
