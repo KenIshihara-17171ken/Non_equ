@@ -24,7 +24,19 @@ python main_kinetic/fig1_2.py
 ```
 Inside fig1_2.py, the if __name__ == "__main__": block controls parameter loading or generation, the EM fitting process, and the plotting of Figures 1 and 2.
 
+
 ### Figure 4
+  ## Data Availability
+
+Due to the large size of the dataset, the complete saved data is not hosted on GitHub. Instead, it is archived on Zenodo for long-term preservation and easy citation. You can download the data using the following link:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15205014.svg)](https://doi.org/10.5281/zenodo.15205014)
+
+**Citation:**
+
+ISHIHARA, K. (2025). State-Space Kinetic Ising Model Code and Data for Neuronal Spiking Analysis. Zenodo. https://doi.org/10.5281/zenodo.15205014
+
+
 Run:
 ```bash
 python main_kinetic/fig4.py
@@ -47,49 +59,3 @@ This repository includes:
 - Toggling mechanisms (USE_SAVED_...) that let you switch between loading existing data/results or generating them from scratch.
 
 - Plotting routines for comparing different methods of entropy-flow estimation.
-
-### Key Toggles (Generating vs. Loading Data)
-Inside the main scripts (e.g.,fig4.py), you will often see the following boolean variables. All of them are set to False by default because no precomputed data is currently shared.
-
-- **USE_SAVED_THETA**
-
-  - False (default): Generate new parameters (THETA) and spike data based on user-defined distributions.
-
-  - True: Load previously saved parameters and spike data. (Currently not supported; data sharing is under preparation.)
-
-- **USE_SAVED_EMD**
-
-  - False (default): Run EM fitting from scratch using spike data.
-
-  - True: Load a previously saved EM fitting object (emd). (Currently not supported.)
-
-- **USE_SAVED_SAMPLING**
-
-  - False (default): Generate new spike data and compute sampling-based entropy flow.
-
-  - True: Load previously computed sampling-based entropy-flow results. (Currently not supported.)
-
-Since all three toggles are False by default, the script will perform full data generation, EM fitting, and entropy computation. This can require up to 90 minutes on standard hardware using the default settings.
-
-### Parameter Setup
-Within each main script (e.g., fig4.py), you can modify simulation parameters such as:
-
-python
-```bash
-N = 80          # Number of neurons
-T = 150         # Number of time steps
-R = 500         # Number of repeated experimental trials 
-R_sampling = 500  # Number of trials for sampling-based entropy flow
-
-coupling_mu = 5 / N
-coupling_sigma = 30
-coupling_alpha = 0.1 * N
-
-field_mu = -3
-field_sigma = 50
-field_alpha = 1
-```
-Reducing N, T, or R will shorten the computation time.
-Increasing them will significantly increase runtime.
-
-
