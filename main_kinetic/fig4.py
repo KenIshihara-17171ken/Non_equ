@@ -614,7 +614,7 @@ if __name__ == "__main__":
     # ---------------------------
     # 3) Load or run EMD
     # ---------------------------
-    USE_SAVED_EMD = False#True
+    USE_SAVED_EMD = True
     if USE_SAVED_EMD:
         emd = load_or_create_emd(
             N, T, R,
