@@ -595,7 +595,7 @@ if __name__ == "__main__":
     # ---------------------------
     # 2) Load or generate the true parameters and spikes
     # ---------------------------
-    USE_SAVED_THETA = False#True
+    USE_SAVED_THETA = True
     if USE_SAVED_THETA:
         THETA, spikes = load_or_create_theta_spikes(
             N, T, R,
@@ -630,7 +630,7 @@ if __name__ == "__main__":
    # ------------------------------------------------
     # Example usage in your main script
     # ------------------------------------------------
-    USE_SAVED_SAMPLING = False#True
+    USE_SAVED_SAMPLING = True
     if USE_SAVED_SAMPLING:
         (true_sampling_entropy_flow_total,
         true_sampling_entropy_flow_forward,
