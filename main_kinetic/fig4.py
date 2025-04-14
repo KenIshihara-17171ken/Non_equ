@@ -565,7 +565,7 @@ def plot_entropy_comparison(
 
     # Save without a plot title; filenames are changed to the requested name
     plt.savefig('fig/figure4.pdf', format='pdf')
-    plt.savefig('fig/figure14.eps', format='eps')
+    plt.savefig('fig/figure4.eps', format='eps')
     plt.show()
 
 
