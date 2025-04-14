@@ -38,7 +38,6 @@ import ssll_kinetic
 from ssll_kinetic import synthesis
 import macro
 
-import macro1
 np.random.seed(1) 
 
 def load_or_create_theta_spikes(
@@ -614,7 +613,7 @@ if __name__ == "__main__":
     # ---------------------------
     # 3) Load or run EMD
     # ---------------------------
-    USE_SAVED_EMD = True
+    USE_SAVED_EMD = True#False
     if USE_SAVED_EMD:
         emd = load_or_create_emd(
             N, T, R,
