@@ -34,7 +34,7 @@ Due to the large size of the dataset, the complete saved data is not hosted on G
 
 **Citation:**
 
-ISHIHARA, K. (2025). State-Space Kinetic Ising Model Code and Data for Neuronal Spiking Analysis. Zenodo. https://doi.org/10.5281/zenodo.15205014
+ISHIHARA, K. (2025). State-Space Kinetic Ising Model Code and Data for Neuronal Spiking Analysis. Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15220108.svg)](https://doi.org/10.5281/zenodo.15220108)
 
 **How to Download and Use the Data:**
 
