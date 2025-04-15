@@ -30,7 +30,7 @@ Inside fig1_2.py, the if __name__ == "__main__": block controls parameter loadin
 
 Due to the large size of the dataset, the complete saved data is not hosted on GitHub. Instead, it is archived on Zenodo for long-term preservation and easy citation. You can download the data using the following link:
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15205014.svg)](https://doi.org/10.5281/zenodo.15205014)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15220108.svg)](https://doi.org/10.5281/zenodo.15220108)
 
 **Citation:**
 
@@ -39,7 +39,7 @@ ISHIHARA, K. (2025). State-Space Kinetic Ising Model Code and Data for Neuronal 
 **How to Download and Use the Data:**
 
 1. **Download the Dataset:**
-   - Click the DOI badge above or visit [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15220108.svg)](https://doi.org/10.5281/zenodo.15220108) to navigate to the Zenodo record.
+   - Click the DOI badge above or visit [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15220108.svg)](https://doi.org/10.5281/zenodo.15220108)to navigate to the Zenodo record.
    - On the Zenodo page, download the `saved_data.zip` file (approximately 3.1 GB).
 
 2. **Extract the Dataset:**
