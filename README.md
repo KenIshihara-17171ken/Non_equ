@@ -36,7 +36,7 @@ Due to the large size of the dataset, the complete saved data is not hosted on G
 
 1. **Download the Dataset:**
    - Click the DOI badge above or visit [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15220108.svg)](https://doi.org/10.5281/zenodo.15220108)to navigate to the Zenodo record.
-   - On the Zenodo page, download the `saved_data.zip` file (approximately 3.1 GB).
+   - On the Zenodo page, download the `saved_data.zip` file (approximately 5.0 GB).
 
 2. **Extract the Dataset:**
    - Once downloaded, extract the `saved_data.zip` file.
