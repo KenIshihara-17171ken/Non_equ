@@ -16,6 +16,23 @@ For further details, please refer to the preprint:
 
 ## How to Reproduce the Figures
 
+### Performance Tip: Choosing the Right Filter Function
+
+The EM algorithm includes a filtering step (`filter_function`) and its parallelized version (`filter_function_Parallel`). Both functions are defined in:```e_step(emd)```in `ssll_kinetic/exp_max.py`
+The performance of your run may vary significantly based on the number of neurons (**N**) in your simulation:
+
+- For `fig4.py` and larger-scale settings (**N ≥ 40**), it is **recommended to use**:
+
+  ```python
+  filter_function_Parallel(emd)
+   ```
+- For `fig1_2.py` or smaller-scale models, the standard version is faster:
+
+   ```python
+  filter_function(emd)
+   ```
+To apply this, simply comment/uncomment the relevant lines in exp_max.py.
+
 ### Figure 1 and 2
 
 Run:
