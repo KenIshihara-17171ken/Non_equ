@@ -1,5 +1,9 @@
 # State-Space Kinetic Ising Model
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17504162.svg)](https://doi.org/10.5281/zenodo.17504162)
+[![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15220108.svg)](https://doi.org/10.5281/zenodo.15220108)
+
+
 This repository provides Python code for analyzing **non-stationary and nonequilibrium** neuronal spiking activity using a state-space kinetic Ising model. The model captures time-varying firing rates and causal couplings, enabling the estimation of **time-asymmetric** (nonequilibrium) dynamics such as entropy flow.
 
 ## Requirements
