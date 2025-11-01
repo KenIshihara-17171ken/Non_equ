@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Code for: State-Space Kinetic Ising Model reveals task-dependent entropy flow ..."
+version: "v1.1.0"
+date-released: "2025-11-02"
+doi: "10.5281/zenodo.17504162"
+repository-code: "https://github.com/KenIshihara-17171ken/Non_equ"
+authors:
+  - family-names: Ishihara
+    given-names: Ken
+  - family-names: Shimazaki
+    given-names: Hideaki
+license: "MIT"
+keywords: [neuroscience, spike-train, kinetic Ising, entropy flow, state-space]
