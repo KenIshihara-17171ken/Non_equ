@@ -1,0 +1,19 @@
+
+# ===== large / generated =====
+spike_datas_all/
+saved_data/
+saved_data.zip
+fig/
+figures/
+
+# ===== caches =====
+__pycache__/
+.ipynb_checkpoints/
+.sigma_cache/
+
+# ===== misc =====
+.DS_Store
+.vscode/
+*.eps
+*.pdf
+*.png
