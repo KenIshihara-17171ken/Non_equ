@@ -71,7 +71,8 @@ def run(spikes, max_iter=100, mstep=True):
     emd.iterations = 0
 
     # EM loop
-    while emd.iterations < max_iter:
+    # while emd.iterations < max_iter:
+    while emd.iterations < max_iter and (emd.convergence > emd.CONVERGED):
         print(
             f"EM Iteration: {emd.iterations} - Convergence {emd.convergence:.6f} > {emd.CONVERGED:.6f}"
         )
@@ -85,27 +86,43 @@ def run(spikes, max_iter=100, mstep=True):
         if mstep:
             m_step_time = timeit.timeit(lambda: exp_max.m_step(emd), number=loop)
             emd.m_step_time = m_step_time / loop
-
-        # Update previous log likelihood
+            
         lmp = lmc
-        # Compute new log likelihood
         lmc = emd.marg_llk(emd)
+        emd.llk_time = timeit.timeit(lambda: emd.marg_llk(emd), number=loop) / loop
 
-        # Log-likelihood calculation timing
-        llk_time = timeit.timeit(lambda: emd.marg_llk(emd), number=loop)
-        emd.llk_time = llk_time / loop
-
-        # Store marginal log likelihood and state covariance
         emd.mllk_list.append(lmc)
         emd.mllk = lmc
         emd.Q_list.append(emd.state_cov)
         emd.iterations_list.append(emd.iterations)
 
-        # Increment iteration count
         emd.iterations += 1
+        emd.convergence = (lmp - lmc) / lmp if lmp != 0 else 0.0
+        
+        
 
-        # Compute convergence based on relative change in log likelihood
-        emd.convergence = (lmp - lmc) / lmp if lmp != 0 else 0
+#         # Update previous log likelihood
+#         lmp = lmc
+#         # Compute new log likelihood
+#         lmc = emd.marg_llk(emd)
+
+#         # Log-likelihood calculation timing
+#         llk_time = timeit.timeit(lambda: emd.marg_llk(emd), number=loop)
+#         emd.llk_time = llk_time / loop
+
+#         # Store marginal log likelihood and state covariance
+#         emd.mllk_list.append(lmc)
+#         emd.mllk = lmc
+#         emd.Q_list.append(emd.state_cov)
+#         emd.iterations_list.append(emd.iterations)
+
+#         # Increment iteration count
+#         emd.iterations += 1
+
+#         # Compute convergence based on relative change in log likelihood
+#         emd.convergence = (lmp - lmc) / lmp if lmp != 0 else 0
+        
+   
 
     # Compute AIC after finishing
     emd.aic = -2 * emd.mllk + 2 * emd.dim_pram
